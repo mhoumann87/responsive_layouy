@@ -1,0 +1,62 @@
+/* Custom Properties */
+:root {
+  --header: #2e323f;
+  --section: #3b4050;
+  --font: #6f737f;
+  --white: #ffffff;
+  --gold: #a59678;
+  --light: #f3eed9;
+
+  --main-font: 'Montserrat', sans-serif;
+  --headings: 'Oswald', sans-serif;
+
+  --fw-bold: 700;
+  --fw-reg: 400;
+
+  --fs-xsmall: 1.125rem;
+  --fs-small: 1.3125rem;
+  --fs-reg: 1.5rem;
+  --fs-large: 1.875rem;
+  --fs-xlarge: 2.25rem;
+  --fs-xxl: 5.625rem;
+}
+
+/* Reset and base set up */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  font-size: var(--fs-reg);
+  font-weight: var(--fw-reg);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--headings);
+  font-weight: var(--fw-bold);
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sections */
