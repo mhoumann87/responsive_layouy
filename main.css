@@ -38,6 +38,13 @@ body {
   font-family: var(--main-font);
   font-size: var(--fs-reg);
   font-weight: var(--fw-reg);
+  color: var(--font);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 h1,
@@ -47,16 +54,59 @@ h3 {
   font-weight: var(--fw-bold);
 }
 
-img,
-svg {
-  max-width: 100%;
-  height: auto;
+h1 {
+  font-size: var(--fs-xxl);
+  margin: 0;
+  line-height: 1;
 }
 
+h2 {
+  font-size: var(--fs-xlarge);
+}
+
+h3 {
+  font-size: var(--fs-large);
+}
+
+h2,
+h3,
+span {
+  color: var(--gold);
+}
+
+.desktop {
+  display: none;
+}
 .container {
-  width: 80%;
+  width: 95%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Sections */
+
+.main__text,
+.main__img {
+  margin-bottom: 2em;
+}
+
+.sidebar__card {
+  background-color: var(--section);
+  padding: 2em;
+  color: var(--white);
+  text-align: center;
+}
+
+.sidebar__card + .sidebar__card {
+  margin-top: 2rem;
+}
+
+.sidebar__card p {
+  font-size: var(--fs-small);
+}
+
+.sidebar__card h3 {
+  color: var(--white);
 }
 
 /* Sections */
