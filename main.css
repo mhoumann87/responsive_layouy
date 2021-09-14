@@ -117,13 +117,68 @@ span {
   .sidebar {
     display: flex;
     gap: 2em;
+    justify-content: space-between;
   }
 
   .sidebar__card {
-    width: 30%;
+    flex: 1 1 30%;
   }
 
   .sidebar__card + .sidebar__card {
     margin: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .desktop {
+    display: block;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    background-color: var(--header);
+    padding: 0.75em 0;
+  }
+
+  .header__content {
+    align-items: center;
+  }
+
+  .header__img {
+    width: 64px;
+  }
+
+  .nav {
+    align-items: center;
+  }
+
+  .nav__list {
+    list-style: none;
+    gap: 1em;
+  }
+
+  .nav__link {
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: var(--fs-xsmall);
+  }
+
+  .main__content {
+    display: flex;
+    gap: 2em;
+  }
+
+  .main__content h2 {
+    margin: 0;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    flex: 0 0 30%;
   }
 }
